@@ -62,7 +62,8 @@ def clean_code (df1):
     linhas_selecionadas = (df1['Time_taken(min)'] != 'nan')
     df1 = df1.loc[linhas_selecionadas, :].copy()
     df1['Time_taken(min)'] = df1['Time_taken(min)'].astype(int)
-return df1
+    
+    return df1
 
 #--------------------------Inicio estrutura de dados-----------------------
 
